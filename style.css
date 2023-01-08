@@ -1,0 +1,58 @@
+body, * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    padding: 30px 145px;
+    border: 2px solid red; 
+}
+
+header .nav {
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+header .nav > * {
+    /* border: 1px solid blue; */
+}
+header .logo {
+    display: flex;
+    align-items: center;
+}
+header .logo span{
+    color: #173A56;
+    font-weight: 700;
+    font-size: 30px;
+    margin-left: 16px;
+}
+
+header ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+}
+
+header ul a {
+    color: #22343D;
+    font-weight: 600px;
+}
+
+.signin a, .signup a {
+    padding: 10px 15px;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block;
+}
+.signup a {
+    color: #fff;
+    background: #02897A;
+}
