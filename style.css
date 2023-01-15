@@ -45,14 +45,130 @@ header ul a {
     font-weight: 600px;
 }
 
-.signin a, .signup a {
+.btn-default, .btn-filled {
     padding: 10px 15px;
     border: 1px solid #BCD0E5;
     border-radius: 4px;
     font-weight: bold;
     display: inline-block;
 }
-.signup a {
+.btn-filled {
     color: #fff;
     background: #02897A;
+}
+
+.promo-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.promo-info > * {
+    border: 1px solid red;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.text h1 {
+    font-weight: 700px;
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 18px;
+}
+.text p {
+   margin-bottom: 45px; 
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 28px;
+}
+
+.promo .btns .default {
+  margin-left: 10px;  
+  color: #02897A;
+  font-weight: bold;
+}
+.promo .btns .default span {
+    text-decoration: underline;
+}
+
+.products-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 66px;
+}
+
+.products-info h1 {
+    font-weight: 700px;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.products-info .items {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.products-info .item {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.products-info .item span {
+    width: 50px;
+    height: 50px;
+    border-radius: 19px;
+} 
+
+.products-info .items .item:nth-child(1) span {
+    background-color: #02897A;
+}
+.products-info .items .item:nth-child(2) span {
+    background-color: #4D8DFF;
+}
+.products-info .items .item:nth-child(3) span {
+    background-color: #740A76;
+}
+.products-info .items .item:nth-child(4) span {
+    background-color: #F03E3D;
+}
+.products-info .items .item span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.products-info .items .item span i {
+    color: #fff;
+}
+.products-info .items .item:nth-child(1) span i {
+    transform: rotate(180deg);
+    /* transform: scaleY(-1); */
+    /* transform: scaleX(-1); */
+}
+.products-info .items .item h3 {
+    font-size: 22px;
+}
+.products-info {
+    position: relative;
+    /* background-image: linear-gradient(179.59deg, rgba(255, 255, 255, 0.0001) 0.35%,#EDEDED 99.63%); */
+}
+.products-info::after {
+    content: '';
+    position: absolute;
+    bottom:-100px;
+    left:0;
+    z-index: -1;
+    height: 500px;
+    /* width: calc(100% + 50px); */
+    width: 100%;
+    border-radius: 50%;
+    background-image: linear-gradient(179.59deg, rgba(255, 255, 255, 0.3) 30.35%,#EDEDED 99.63%);
 }
